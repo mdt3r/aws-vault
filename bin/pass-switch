@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+# shellcheck shell=bash 
+# script for use in aws-vault so that:
+# -`aws-vault add <aws-user>` persistent credentials are saved with passage/age (no cache, password/yubikey every time)
+# - temporary credentials are saved through pass/gpg and guarded by gpg-agent with generous ttl cache
+
+for arg in "$@"; do
+    [[ "$arg" == *sts.* ]] && exec pass "$@"
+done
+exec passage "$@"

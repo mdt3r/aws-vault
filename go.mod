@@ -62,3 +62,8 @@ require (
 	golang.org/x/text v0.38.0 // indirect
 	google.golang.org/protobuf v1.36.12 // indirect
 )
+
+replace (
+	github.com/byteness/keyring => ../keyring
+	github.com/byteness/keyring v1.6.1 => ../keyring
+)
