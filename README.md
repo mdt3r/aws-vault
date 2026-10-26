@@ -8,6 +8,12 @@
 [![Downloads](https://img.shields.io/github/downloads/byteness/aws-vault/total)](https://github.com/byteness/aws-vault/releases)
 [![Continuous Integration](https://github.com/byteness/aws-vault/workflows/Continuous%20Integration/badge.svg)](https://github.com/byteness/aws-vault/actions)
 
+> [!NOTE] 
+> About this fork.  
+> This is connected with the pr [ByteNess/aws-vault#277](https://github.com/ByteNess/aws-vault/pull/277) so I could use age for persistent and gpg-agent for session keys (non-cached vs cached). This is just adding a change I was using from January.  
+> Now there is support for this out of the box through [ByteNess/aws-vault#436](https://github.com/ByteNess/aws-vault/pull/436) so we will go back to upstream. commiting this for archival purposes.  
+> Bellow is original docs ...
+---
 > [!NOTE]
 > This is a maintained fork of <https://github.com/99designs/aws-vault> which is an abandoned project.
 > Contributions are welcome and preferably please open an [issue](https://github.com/ByteNess/aws-vault/issues) first.
